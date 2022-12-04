@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/cpu.h
+
+../include/disk.h
+
+../include/gpu.h
+iostream
+-
+
+../include/kbd.h
+
+../include/ram.h
+
+/home/kate/skillbox/code/25.2_comp/src/disk.cpp
+iostream
+-
+fstream
+-
+disk.h
+/home/kate/skillbox/code/25.2_comp/src/disk.h
+ram.h
+/home/kate/skillbox/code/25.2_comp/src/ram.h
+
+/home/kate/skillbox/code/25.2_comp/src/main.cpp
+string
+-
+iostream
+-
+ram.h
+/home/kate/skillbox/code/25.2_comp/src/ram.h
+cpu.h
+/home/kate/skillbox/code/25.2_comp/src/cpu.h
+kbd.h
+/home/kate/skillbox/code/25.2_comp/src/kbd.h
+gpu.h
+/home/kate/skillbox/code/25.2_comp/src/gpu.h
+disk.h
+/home/kate/skillbox/code/25.2_comp/src/disk.h
+
