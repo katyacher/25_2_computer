@@ -1,1 +1,0 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/25.2_comp.dir/main.cpp.o  -o 25.2_comp 
