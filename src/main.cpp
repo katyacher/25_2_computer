@@ -11,7 +11,7 @@ int main(){
     std::string command;
 
     while (command != "exit"){
-        std::cout << "Enter command: ";
+        std::cout << "Enter the command: ";
         std::cin >> command;
         if (command == "exit"){
             break;
