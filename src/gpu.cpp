@@ -4,7 +4,11 @@
 
 
 void display(){
-  for (int i = 0; i < 8; i++){
-    std::cout << buffer[i] << " ";
+  const int size = 8;
+  int arr[size];
+    
+  read(arr, size);
+  for (int i = 0; i < size; i++){
+    std::cout << arr[i] << " ";
   }
 }

@@ -3,8 +3,11 @@
 #include "ram.h"
 
 void input(){
-    for (int i = 0; i < 8; i++){
+    int arr[8];
+    const int size = 8;
+    for (int i = 0; i < size; i++){
         std::cout << "Enter number #" << i + 1 << ": ";
-        std::cin >> buffer[i];
+        std::cin >> arr[i];
     }
+    write(arr, size);
 }

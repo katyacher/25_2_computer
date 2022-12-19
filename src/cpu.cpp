@@ -3,11 +3,18 @@
 #include "ram.h"
 
 
-void compute(){
+int compute(){
   int sum = 0;
-  for (int i = 0; i < 8; i++){
-    sum += buffer[i];
+
+  int arr[8];
+  const int size = 8;
+
+  read(arr, size);
+  
+  for(int i = 0; i < size; i++){
+    sum += arr[i];
   }
 
- std::cout << "Sum = " << sum << std::endl;
+  return sum;
+
 }

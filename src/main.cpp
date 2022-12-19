@@ -16,7 +16,7 @@ int main(){
         if (command == "exit"){
             break;
         } else if (command == "sum"){
-            compute();
+            std::cout << "Sum = " << compute() << std::endl;
         } else if (command == "save"){
             save();
         } else if (command == "load"){

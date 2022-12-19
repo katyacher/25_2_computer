@@ -1,6 +1,5 @@
 #pragma once
 
-extern int buffer[8];
 
-void write();
-void read();
+void write(int* arr, const int size);
+void read(int* arr, const int size);

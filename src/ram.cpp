@@ -1,13 +1,17 @@
 #include "ram.h"
-#include "kbd.h"
-#include "gpu.h"
 
-int buffer[8];
+const int size = 8;
+int buffer[size]{0};
 
-void write(){
-    input();
+
+void write(int* arr, const int size){
+    for(int i = 0; i < size; i++){
+        buffer[i] = arr[i];
+    }
 };
 
-void read(){
-    display();
+void read(int* arr, const int size){
+    for(int i = 0; i < size; i++){
+        arr[i] = buffer[i];
+    }
 };
