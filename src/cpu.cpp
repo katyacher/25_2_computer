@@ -6,11 +6,11 @@
 int compute(){
   int sum = 0;
 
-  int arr[8];
   const int size = 8;
+  int arr[size];
 
   read(arr, size);
-  
+
   for(int i = 0; i < size; i++){
     sum += arr[i];
   }

@@ -5,8 +5,9 @@
 
 void save()
 {
-    int arr[8];
     const int size = 8;
+    int arr[size];
+    
     read(arr, size);
     std::ofstream disk("disk.txt", std::ios::binary);
 
@@ -20,8 +21,9 @@ void save()
 
 void load()
 {
-    int arr[8];
-     const int size = 8;
+    const int size = 8;
+    int arr[size];
+    
     std::ifstream disk("disk.txt", std::ios::binary);
 
     if (disk.is_open()){
